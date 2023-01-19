@@ -14,6 +14,7 @@ featured_image: ../assets/images/featured/featured-img-placeholder.png
 ##### h5 Heading
 ###### h6 Heading
 
+안녕하세요 이건 테스트입니다
 
 ## Horizontal Rules
 
