@@ -13,14 +13,14 @@ darkmode_js = ["assets/js/darkmode.js"]
 enableInlineShortcodes = true
 
 [params]
-author = "Nusser Studios"
+author = "오세나 팀"
 authorimage = "../assets/images/global/author.webp"
 github = "https://github.com/nusserstudios"
 facebook = "https://facebook.com/nusserstudios"
 og_image = "/images/tailbliss-cover.png"
-sitename = "TailBliss"
+sitename = "오세나 블로그"
 twitter = "@nusserstudios"
-description = "TailBliss is Hugo Starter"
+description = "오세나 ocena 팀 블로그"
 
 [markup]
 [markup.goldmark]
