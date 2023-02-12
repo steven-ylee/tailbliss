@@ -1,11 +1,17 @@
 {{define "main"}}
 <article>
-  <header class="mb-4 bg-indigo-600">
-    <span class="py-96">
-      <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
+  <header class="flex flex-col items-center justify-start pt-16 mb-4">
+    <div class="text-white w-full max-w-4xl px-4 pb-2 ">
+      <div class="text-lg font-medium md:text-xl text-primary/90 dark:text-gray-400">{{ .Params.categories }}</div>
+    </div>
+      <h1 class="pb-4 max-w-4xl w-full px-4 text-3xl sm:text-4xl leading-normal sm:leading-snug font-bold text-gray-800 dark:text-white capitalize">
         {{ .Title }}
       </h1>
-    </span>
+      <div class="flex text-gray-500 dark:text-white w-full max-w-4xl px-4 md:text-lg">
+        <div class="mb-1  ">{{ .Params.author }}</div>
+        &nbsp;&nbsp; <span class="text-gray-300">|</span> &nbsp;&nbsp;
+        <time class="" datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
+      </div>
   </header>
   <div class="max-w-4xl mx-auto mt-8 mb-2">
     <div class="px-6">
@@ -26,9 +32,16 @@
       {{ end }}
     </div>
   </div>
+  
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
   <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
     {{.Content}}
+  </div>
+  <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto ">
+    <div class="text-xl text-primary font-bold mb-4">Tags</div>
+    {{ range (.GetTerms "tags") }}
+        <a class="dark:text-white text-gray-800 bg-gray-200 dark:bg-gray-600 p-1 px-2 rounded-lg" href="{{ .Permalink }}">{{ .LinkTitle }}</a>
+    {{ end }}
   </div>
 </article>
 {{end}}

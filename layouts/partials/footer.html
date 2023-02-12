@@ -8,43 +8,39 @@
     class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
   >
     <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
+
+
       <div class="px-5 py-2">
         <a
           href="https://ocena.app/"
-          class="text-base text-gray-400 hover:text-gray-300"
-          >ocena</a
+          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          >오세나</a
         >
       </div>
 
       <div class="px-5 py-2">
         <a
-          href="/categories/blog/"
-          class="text-base text-gray-400 hover:text-gray-300"
-          >Blog</a
+          href="/posts/"
+          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          >아티클</a
         >
       </div>
 
       <div class="px-5 py-2">
         <a
-          href="/categories/news/"
-          class="text-base text-gray-400 hover:text-gray-300"
-          >News</a
+          href="https://ocena.app/contact/"
+          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          >문의하기</a
         >
       </div>
 
       <div class="px-5 py-2">
-        <a href="/prose/" class="text-base text-gray-400 hover:text-gray-300"
-          >Prose</a
-        >
-      </div>
-
-      <div class="px-5 py-2">
-        <a href="/contact/" class="text-base text-gray-400 hover:text-gray-300"
-          >Contact</a
+        <a href="https://www.linkedin.com/company/ocena-app" class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          >링크드인</a
         >
       </div>
     </nav>
-    <div class="flex justify-center mt-8 space-x-6">
+    <!-- <div class="flex justify-center mt-8 space-x-6">
       <a href="#" class="text-gray-400 hover:text-gray-300">
         <span class="sr-only">Facebook</span>
         <svg
@@ -122,8 +118,8 @@
           />
         </svg>
       </a>
-    </div>
-    <p class="mt-8 text-base text-center text-gray-400">
+    </div> -->
+    <p class="mt-8 text-sm text-center text-gray-400">
       &copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.
     </p>
   </div>
