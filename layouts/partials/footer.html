@@ -7,35 +7,51 @@
   <div
     class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
   >
-    <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
-
-
-      <div class="px-5 py-2">
+  <a
+        href="/"
+        class="flex justify-center mb-6 text-gray-100 transition duration-1000 ease-in-out group"
+      >
+        <img
+          src="/ocena-logo-white.png"
+          class="transition-opacity h-9 group-hover:opacity-50 group-focus:opacity-70"
+          alt="{{ .Site.Title }} Logo"
+        />
+        <div
+          class="mt-1 ml-3 text-xl font-base tracking-tight text-gray-100 transition-colors group-hover:text-gray-400/60"
+        >
+          <!-- {{ .Site.Title }} -->
+          Blog
+        </div>
+      </a>
+    <nav class="flex flex-wrap justify-center " aria-label="Footer">
+      <div class="py-2 sm:p-2">
         <a
           href="https://ocena.app/"
-          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          target=”_blank”
+          class="text-base text-gray-200 font-medium px-4 py-3 hover:bg-primary/30 rounded-2xl"
           >오세나</a
         >
       </div>
 
-      <div class="px-5 py-2">
+      <div class="py-2 sm:p-2">
         <a
           href="/posts/"
-          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          class="text-base text-gray-200 font-medium px-4 py-3 hover:bg-primary/30 rounded-2xl"
           >아티클</a
         >
       </div>
 
-      <div class="px-5 py-2">
+      <div class="py-2 sm:p-2">
         <a
           href="https://ocena.app/contact/"
-          class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+          target=”_blank”
+          class="text-base text-gray-200 font-medium px-4 py-3 hover:bg-primary/30 rounded-2xl"
           >문의하기</a
         >
       </div>
 
-      <div class="px-5 py-2">
-        <a href="https://www.linkedin.com/company/ocena-app" class="text-base text-gray-200 font-bold px-4 py-3 hover:bg-primary/30 rounded-2xl"
+      <div class="py-2 sm:p-2">
+        <a href="https://www.linkedin.com/company/ocena-app" target=”_blank” class="text-base text-gray-200 font-medium px-4 py-3 hover:bg-primary/30 rounded-2xl"
           >링크드인</a
         >
       </div>

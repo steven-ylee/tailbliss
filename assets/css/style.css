@@ -2406,6 +2406,10 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2503,6 +2507,10 @@ video {
   max-width: 80rem;
 }
 
+.max-w-md {
+  max-width: 28rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -2515,10 +2523,6 @@ video {
   max-width: 56rem;
 }
 
-.max-w-md {
-  max-width: 28rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -2529,6 +2533,14 @@ video {
 
 .max-w-none {
   max-width: none;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .flex-1 {
@@ -2757,6 +2769,10 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-primary\/80 {
+  background-color: rgb(44 102 254 / 0.8);
 }
 
 .bg-center {
@@ -3579,6 +3595,10 @@ EmojiSymbols;
     justify-content: center;
   }
 
+  .sm\:p-2 {
+    padding: 0.5rem;
+  }
+
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3702,6 +3722,10 @@ EmojiSymbols;
   .md\:prose-lg :where(p):not(:where([class~="not-prose"] *)) {
     margin-top: 1.3333333em;
     margin-bottom: 1.3333333em;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 
   .md\:prose-lg :where([class~="lead"]):not(:where([class~="not-prose"] *)) {
@@ -4253,6 +4277,11 @@ EmojiSymbols;
     padding-right: 2rem;
   }
 
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .lg\:pt-12 {
     padding-top: 3rem;
   }
@@ -4284,6 +4313,11 @@ EmojiSymbols;
 @media (min-width: 1280px) {
   .xl\:inline {
     display: inline;
+  }
+
+  .xl\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .xl\:text-9xl {
