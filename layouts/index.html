@@ -30,7 +30,7 @@
 
   <div class="px-4 md:px-10 lg:px-14 mt-4 mb-4 mx-auto max-w-7xl">
     <h2 class="md:text-lg ml-2 font-semibold text-gray-500">추천 아티클</h2>
-    <a class="" href="{{.Permalink}}">
+    <a class="" href="/posts/사용가이드-스마트-견적서-제작/">
       <div
         class="bg-primary/20 dark:bg-primary/40 md:space-x-8 mt-2 md:flex md:justify-around rounded-3xl p-4 xl:py-8"
       >
@@ -50,19 +50,19 @@
                 class="text-2xl mt-2 lg:text-3xl font-bold text-gray-700 dark:text-gray-200"
               >
                 {{ with .Site.GetPage "/posts" }} {{ with .GetPage
-                "사용가이드-스마트_견적서 _제작.md" }}{{ .Title }}{{ end }} {{ end }}
+                "사용가이드-스마트-견적서-제작.md" }}{{ .Title }}{{ end }} {{ end }}
               </div>
               <div
                 class="mt-4 text-sm lg:text-base text-gray-700 font-normal dark:text-gray-300"
               >
                 {{ with .Site.GetPage "/posts" }} {{ with .GetPage
-                "사용가이드-스마트_견적서 _제작.md" }}{{ .Summary }}{{ end }} {{ end }}
+                "사용가이드-스마트-견적서-제작.md" }}{{ .Summary }}{{ end }} {{ end }}
               </div>
             </div>
           </div>
 
           <div class="text-gray-600 dark:text-gray-400 text-sm md:text-base font-light mt-4 mb-2">
-            {{ with .Site.GetPage "/posts" }} {{ with .GetPage "사용가이드-스마트_견적서 _제작.md"
+            {{ with .Site.GetPage "/posts" }} {{ with .GetPage "사용가이드-스마트-견적서-제작.md"
             }}{{ .Date.Format "2006-01-02" }}{{ end }} {{ end }}
           </div>
         </div>
